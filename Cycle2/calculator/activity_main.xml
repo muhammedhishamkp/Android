@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Display TextView -->
+
+    <!-- Calculator Buttons using GridLayout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/background_light"
+        android:gravity="end"
+        android:padding="8dp"
+        android:text="0"
+        android:textSize="32sp" />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/background_light"
+        android:padding="8dp"
+        android:textSize="32sp" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+
+
+        <!-- Buttons will be added dynamically in code -->
+
+    </GridLayout>
+
+</LinearLayout>
