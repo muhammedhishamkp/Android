@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 boolean insertData = db.insertUser(name, age, mark);   // insert data
                 if (insertData) {
                     Toast.makeText(MainActivity.this, "User Inserted Successfully", Toast.LENGTH_SHORT).show();
-                    displayData();
+
                 } else {
                     Toast.makeText(MainActivity.this, "Failed to Insert User", Toast.LENGTH_SHORT).show();
                 }
